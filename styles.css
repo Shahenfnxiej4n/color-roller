@@ -1,0 +1,105 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
+
+/* Header styling */
+header {
+  background: #6200ea;
+  color: white;
+  padding: 20px 10px;
+}
+
+a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Controls styling */
+#controls {
+  margin: 20px auto;
+}
+
+label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+input {
+  width: 80px;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+/* Main container for colors */
+#color-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+/* Individual color boxes */
+.color-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.5s ease-in-out;
+}
+
+.color-box.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Predefined colors */
+.red { background-color: red; }
+.orange { background-color: orange; }
+.yellow { background-color: yellow; color: black; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+.purple { background-color: purple; }
+
+/* Footer styling */
+footer {
+  background: #6200ea;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

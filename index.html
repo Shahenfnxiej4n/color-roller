@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Roller by Sabageo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Color Roller</h1>
+    <p>Select how many colors (1-6) you want to roll, then click "Roll"!</p>
+  </header>
+  <main>
+    <div id="controls">
+      <label for="color-count">Number of Colors:</label>
+      <input type="number" id="color-count" min="1" max="6" value="3">
+      <button onclick="rollColors()">Roll</button>
+    </div>
+    <div id="color-container"></div>
+  </main>
+  <footer>
+    <p>Created by <a href="https://www.tiktok.com/@sabageo.official" target="_blank">sabageo.official</a> © 2024</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
